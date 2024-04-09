@@ -1,0 +1,62 @@
+<!DOCTYPE >
+<html>
+<head>
+<title>FLIGHTS</title>
+<style>
+body {
+    margin-top: 75px;  
+    margin-bottom: 75px;  
+    margin-right: 350px;  
+    margin-left: 350px;
+    border-style: solid;
+    border-color: purple;
+   
+    padding-top: 50px;  
+    padding-right: 75px;  
+    padding-bottom: 75px;  
+    padding-left: 75px;
+    position: relative;
+}
+body{ background-image:url('FLIGHT.jpg');
+background-size:cover;}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    bottom:-3px;
+    right:-3px;
+    left: -3px;
+   
+    /*width: calc(100% + 400px);
+    height: calc(100% + 100px);*/
+    background-color:pink;
+    opacity:0.5;
+    z-index: -1;
+}
+sa{color:blue}
+p{text-align:right}
+div{text-align:center}
+</style>
+</head>
+<body>
+<div><img src="hh.jpg" width="75" height="75"></div>
+<div><h2 style="color:blue"><i>FLIGHTS BOOKINGS</i></h2></div>
+<h3 style="color:green"><i>Hey</i> Buddy <i>Where you Flying to?</i></h3><br>
+<label for="Depart from"><b>Depart From:</b></label><p><label for="Depart from"><b>Going To:</b></label></p>
+<input type="text"id="from"name="Depart from" required><p><input type="text"id="from"name="Depart from" required></p>
+<label for="Departure date"><b>Departure Date:</b></label><p><label for="Departure date"><b>Return Date:</b></label></p>
+<input type="date"id="from"name="Depart date" required><p><input type="date"id="from"name="Depart from" required></p>
+<label><b>Travellers</label><br><br>
+<label for="Adult"><b>Adult</b> </label><input type="number"id="adult name="adult" required>
+<label for="Child"><b>Child</b> </label><input type="number" id="child" name="child">
+<p><label><b>Class</b></label>
+<select name="class" id="class">
+<option value="Economy">Economy</option>
+<option value="Premium economy">Premium Economy</option>
+<option value="Business">Buisness</option></select></p><br>
+<div><input type="button"id="search"name="search"value="Search Flights"></div>
+<a href="Train.html"><b><i>Go to Trains</i></b></a><br><br>
+<a href="Bus.html"><b><i>Go to Buses</i></b></a>
+</body>
+</html>
